@@ -51,7 +51,7 @@ Se muestra un mensaje de texto en la consola si la conexión a MongoDB es exitos
 Se miestra un mensaje de error en caso de que la conexión falle, también los detalles del error
 */
 mongoose.connect(
-    'mongodb+srv://Cris_js:mondongoSick@mondongocluster.rb3ji.mongodb.net/?retryWrites=true&w=majority&appName=MondongoCluster'
+    'mongodb+srv://moisesquintana456:Meliodas1*@clusterowo.jpmkw.mongodb.net/?retryWrites=true&w=majority&appName=clusterOWO'
 )
 .then(()=> console.log('Conexion Exitosa'))
 .catch(err => console.error('No se pudo conectar pepepepepe',err))
