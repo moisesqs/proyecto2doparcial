@@ -51,9 +51,11 @@ Se muestra un mensaje de texto en la consola si la conexión a MongoDB es exitos
 Se miestra un mensaje de error en caso de que la conexión falle, también los detalles del error
 */
 mongoose.connect(
-    'mongodb+srv://moisesquintana456:Meliodas1*@clusterowo.jpmkw.mongodb.net/?retryWrites=true&w=majority&appName=clusterOWO'
+    'mongodb+srv://moisesquintana456:Meliodas1*@clusterowo.jpmkw.mongodb.net/BaseDeDatosOwo?retryWrites=true&w=majority&appName=clusterOWO'
 )
 .then(()=> console.log('Conexion Exitosa'))
 .catch(err => console.error('No se pudo conectar pepepepepe',err))
 //Se inicia el servidor de express y lo configura para que arranque desde el puerto 4000
-app.listen(4000)
+app.listen(4000, '0.0.0.0', () => {
+    console.log('Servidor corriendo en el puerto 4000');
+});
