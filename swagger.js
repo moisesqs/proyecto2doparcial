@@ -23,7 +23,7 @@ const swaggerDefinition = {
   },
   servers:[
     {
-      url:'http://3.143.203.1:4000',
+      url:'http://3.148.76.247:4000',
       description:'Develop"s server'
     }
   ]
